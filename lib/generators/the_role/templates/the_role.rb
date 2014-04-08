@@ -8,4 +8,5 @@ TheRole.configure do |config|
   # config.access_denied_method       = :access_denied
   # config.login_required_method      = :authenticate_user!
   # config.destroy_strategy           = :restrict_with_exception # can be nil
+  # config.model_name           	  = :user
 end

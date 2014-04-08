@@ -15,7 +15,8 @@ module TheRole
                     :default_user_role,
                     :access_denied_method,
                     :login_required_method,
-                    :first_user_should_be_admin
+                    :first_user_should_be_admin,
+                    :model_name
   end
 
   configure do |config|
@@ -26,5 +27,6 @@ module TheRole
     config.access_denied_method       = :access_denied
     config.login_required_method      = :authenticate_user!
     config.destroy_strategy           = :restrict_with_exception # can be nil
+    config.model_name                 = :user
   end
 end
