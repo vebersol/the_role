@@ -19,5 +19,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency 'the_string_to_slug', '~> 1.2'
-  s.add_runtime_dependency 'rails', ['>= 3', '< 5']
+  s.add_runtime_dependency 'rails', ['>= 3', '< 7']
 end
